@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+<div class="content">
+    {{ if not .Params.notoc }}
+    <div id="toc">
+    {{ .TableOfContents }}
+    </div>
+  {{ end }}
+  
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .Date.Format "2 Jan 2006" }}</h2>
+  {{ .Content }}
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,7 @@
+baseURL = "http://blog.zzeroo.org/"
+languageCode = "en-us"
+title = "zzeroo's blog"
+theme = "zzeroo-default"
+MetaDataFormat = "toml"
+
+

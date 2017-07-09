@@ -1,0 +1,51 @@
+
+{{ partial "header.html" . }}
+<div class="content">
+
+    <h1>Posts</h1>
+    {{ range first 10 .Data.Pages }}
+        {{ if eq .Type "post" }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Date.Format "2 Jan 2006" }}</p>
+        {{ end }}
+    {{ end }}
+
+    <h1>Pages</h1>
+    {{ range .Data.Pages }}
+        {{ if eq .Type "page" }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ end }}
+    {{ end }}
+
+    <h1>PGP</h1>
+    <p><a href="https://www.gnupg.org/">https://www.gnupg.org/</a></p>
+
+
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+            <h2>Email</h2>
+            <h3>privat: <a href="mailto:co@zzeroo.com">co@zzeroo.com</a></h3>
+            <h3>work: <a href="mailto:s.mueller@it.kls-glt.de">s.mueller@it.kls-glt.de</a></h3>
+        </div>
+    
+        <div class="pure-u-1 pure-u-md-1-3">
+            <h3>key privat: co@zzeroo.com</h3>
+            <p>Download: <a href="{{ $.Site.BaseURL }}co@zzeroo.com.gpg">co@zzeroo.com.gpg</a></p>
+            <object data="co@zzeroo.com.gpg.ascii" type="text/plain" style="height: 300px; width: auto">
+                <a href="co@zzeroo.com.gpg.ascii">co@zzeroo.com.gpg.ascii</a>
+            </object>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3">
+            <h3>key work: s.mueller@it.kls-glt.de</h3>
+            <p>Download: <a href="{{ $.Site.BaseURL }}s.mueller@it.kls-glt.de.gpg">s.mueller@it.kls-glt.de.gpg</a></p>
+        <object data="s.mueller@it.kls-glt.de.gpg.ascii" type="text/plain" style="height: 300px; width: auto">
+            <a href="s.mueller@it.kls-glt.de.gpg.ascii">s.mueller@it.kls-glt.de.gpg.ascii</a>
+        </object>
+        </div>
+
+    </div>
+</div>
+
+
+{{ partial "footer.html" . }}

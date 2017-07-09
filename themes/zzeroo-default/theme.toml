@@ -1,0 +1,19 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "zzeroo default"
+license = "MIT"
+licenselink = "https://github.com/zzeroo/zzeroo-default/blob/master/LICENSE.md"
+description = ""
+homepage = "http://zzeroo.com/"
+tags = []
+features = ["tags", "categories"]
+min_version = "0.20"
+
+[author]
+  name = "zzeroo"
+  homepage = "https://zzeroo.com"
+
+# [Params]
+#   Author = "zzeroo"
+#   disqusShortname = zzeroo
