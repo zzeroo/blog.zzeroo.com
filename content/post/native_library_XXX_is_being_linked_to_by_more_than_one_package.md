@@ -1,6 +1,6 @@
 +++
-date = "2017-07-06T18:17:54+02:00"
-draft = true
+date = "2017-07-11T10:42:12+02:00"
+draft = false
 title = "error: native library `XXX` is being linked to by more than one package, and can only be linked to by one package"
 
 +++
@@ -9,8 +9,8 @@ title = "error: native library `XXX` is being linked to by more than one package
 
 I use [`gtk-rs`][gtk-rs] in many projects. Since I use there the bleeding edge version's I run often in error like this one.
 
-```bash
-# cargo run
+```output
+$ cargo run
 error: native library `atk` is being linked to by more than one package, and can only be linked to by one package                                                             
 
   atk-sys v0.3.4                           
