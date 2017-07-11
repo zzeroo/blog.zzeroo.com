@@ -1,4 +1,4 @@
-baseURL = "http://blog.zzeroo.org/"
+baseURL = "https://blog.zzeroo.org/"
 languageCode = "en-us"
 title = "zzeroo's blog"
 theme = "zzeroo-default"
