@@ -1,4 +1,10 @@
-
+/* prism syntax highlight
+language specific formating */
+pre .language-output:before {
+    content: "# OUTPUT \a";
+    white-space: pre;
+    color: #AAA;
+}
 
 .content {
     margin: 0 auto;
