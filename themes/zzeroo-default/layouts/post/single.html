@@ -10,6 +10,8 @@
   <h1>{{ .Title }}</h1>
   <h2>{{ .Date.Format "2 Jan 2006" }}</h2>
   {{ .Content }}
+
+  {{ partial "disqus.html" . }}
 </div>
 
 {{ partial "footer.html" . }}

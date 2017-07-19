@@ -1,7 +1,8 @@
 baseURL = "https://zzeroo.com/"
-languageCode = "en-us"
+languageCode = "de-de"
 title = "zzeroo's blog"
 theme = "zzeroo-default"
 MetaDataFormat = "toml"
 
 
+disqusShortname = "zzeroo"
