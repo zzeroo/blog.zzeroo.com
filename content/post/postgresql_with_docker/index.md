@@ -38,7 +38,7 @@ docker stop postgres
 
 Das Ganze hat den Vorteil das das lokale System völlig unberührt bleibt. Ich meine eine Postgres Datenbank ist jetzt nicht wirklich eine riesen Anwendung, aber wenn ich da an meine letzten Debian Entwicklungssysteme zurück denken, dann hatte ich da immer eine Postgres Datenbank im Hintergrund laufen, die auch bei jedem Reboot gestartet wurde. Und das nur weil ich MAL eine Datenbank brauchte und die dann halt lokal installiert hatte.
 
-Dieser Blog Post ist nicht als Anleitung von Docker zu sehen. Wenn euch die hier beschriebenen Sachen überhabt nichts sagen besucht bitte unbedingt die [Docker Webseite][docker] und lest euch in das Thema ein.
+**Dieser Blog Post ist nicht als Anleitung von Docker zu sehen. Wenn euch die hier beschriebenen Sachen überhaupt nichts sagen, dann besucht bitte unbedingt die [Docker Webseite][docker] und lest euch in das Thema ein.**
 
 
 [blog]: https://medium.com/@Buys/grokking-diesel-652cb8886a63
