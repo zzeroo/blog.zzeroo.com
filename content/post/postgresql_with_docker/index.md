@@ -14,7 +14,8 @@ Lange Rede kurzer Sinn.... Lasst den Code sprechen :)
 ```bash
 docker run --rm --detach --name postgres --env POSTGRES_USER=username --env POSTGRES_PASSWORD=password --publish 127.0.0.1:5432:5432 postgres
 ```
-Dieser Befehl startet docker. Der letzte Parameter `postgres` ist das so genannte IMAGE welches Docker startet. Ein IMAGE ist ein komplettes Linux mit installierten und konfigurierten Anwendungen, in diesem Fall halt Postgres.
+Dieser Befehl startet docker. Der letzte Parameter `postgres` ist das so genannte IMAGE welches Docker startet. Ein IMAGE ist ein komplettes Linux mit installierten und konfigurierten Anwendungen, in diesem Fall halt Postgres. Ihr fragt nun sicher: "Wo bekomme ich den dieses Image?". Das Image ist online verfügbar unter [hub.docker.com][hub], es ist vom Image Ersteller in die Cloud hoch geladen worden und steht nun der Welt zur Verfügung. 
+Wenn ihr dieses Image noch nie genutzt habt, läd [Docker][docker] es beim ersten Start herunter, alle weiteren Starts werden dann diese lokale Version verwenden.
 
 Der Parameter `--rm` sorgt dafür, dass wenn dieser laufende [Docker][docker] [Container][docker-container] beendet wird, alle Dateien gelöscht werden. **Achtung das zeigt das dieser Befehl wirklich nur für die Entwicklung und NICHT FÜR PRODUKTION verwendet wird!**
 
@@ -45,4 +46,4 @@ Das Ganze hat den Vorteil das das lokale System völlig unberührt bleibt. Ich m
 [docker]: https://www.docker.com/what-container
 [docker-container]: https://www.docker.com/what-container
 [pgadmin]: https://www.pgadmin.org/
-
+[hub]: https://hub.docker.com/_/postgres/
