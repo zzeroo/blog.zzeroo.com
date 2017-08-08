@@ -1,24 +1,22 @@
 
 {{ partial "header.html" . }}
-<div class="content">
 
-    <h1>Posts</h1>
+<div class="content">
+    <h1>die letzten 10 Posts</h1>
     {{ range first 10 .Data.Pages }}
         {{ if eq .Type "post" }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Date.Format "2 Jan 2006" }}</p>
         {{ end }}
     {{ end }}
+    <p><a href="./post">Alle Posts findet ihr hier!</a></p>
 
-    <h1>Misc</h1>
+    <h1>Verschiedenes</h1>
     {{ range .Data.Pages }}
         {{ if eq .Type "page" }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         {{ end }}
     {{ end }}
-
-
-</div>
-
+  </div>
 
 {{ partial "footer.html" . }}

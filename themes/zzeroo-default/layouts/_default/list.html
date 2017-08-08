@@ -1,1 +1,15 @@
-list
+
+{{ partial "header.html" . }}
+
+<div class="content">
+
+    {{ range .Data.Pages }}
+        {{ if eq .Type "post" }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Date.Format "2 Jan 2006" }}</p>
+        {{ end }}
+    {{ end }}
+
+  </div>
+
+{{ partial "footer.html" . }}
