@@ -4,7 +4,7 @@ date: 2017-08-08T13:25:43+02:00
 draft: false
 ---
 
-Ein [Favicon][favicon-wiki] ist ein kleines Bild. Es wird unter Anderem in Browsertabs oder in der Adressleiste des Browsers verwendet. Oder als Symbol für ein Link der auf dem Bildschirm eures Telefons abgelegt wurde.
+Ein [Favicon][favicon-wiki] ist ein kleines Bild. Es wird unter Anderem in Browsertabs, in der Adressleiste des Browsers oder als Symbol für ein Link der auf dem Bildschirm eures Telefons abgelegt wurde verwendet.
 
 {{< figure src="./favicon-usage.png" title="Das kleine Flammen Logo ist ein Favicon, welches ich auf meinem Blog nutze." >}}
 
