@@ -6,6 +6,10 @@ pre .language-output:before {
     color: #AAA;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
     margin: 0 auto;
     padding: 0 2em;
